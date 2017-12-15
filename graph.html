@@ -1,0 +1,32 @@
+<!-- Gebaseerd op Mike Bostock's Multi-Series Line Chart November 5, 2017 https://bl.ocks.org/mbostock/3884955. Aantal aanpassingen zijn gedaan door mij, deze zullen aangegeven worden met een comment, daarnaast zal het ook aangegeven worden in de readme.md -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@duy-linh</title>
+    <link rel='stylesheet' href="styles.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class='left'>
+         <div class='select_graph'>
+             <a href='graph.html'><div class='active'><button class='button_second'>Hokdierbedrijven</button></div></a>
+          <a href='graph2.html'><button class='button_second'>Hokdieren</button></a>
+          <a href='graph3.html'><button class='button_second'>Cultuurgrond</button></a>
+          </div>
+           <h2>Aantal hokdierbedrijven naar economische omvang</h2>
+           <p class='info'>'SO' staat voor Standaard Opbrengst. Een gestandaardiseerde maat voor de economische omvang van agrarische bedrijven, gebaseerd op de opbrengst die gemiddeld op jaarbasis per gewas of diercategorie wordt behaald.</p>
+            <svg class='grafiek' width="700" height="500"></svg>
+            <p class='bron'>Bron: © Centraal Bureau voor de Statistiek, Den Haag/Heerlen 8-11-2017</p>
+        </div>
+        <div class='right'>
+            <h1>Groeit of daalt het aantal hokdierbedrijven?</h1>
+            <p class='uitleg'>Het totaal aantal hokdierbedrijven is de afgelopen jaren flink gedaalt, in 2000 waren er in totaal 10.445 hokdierbedrijven, in 2016 is het totaal gehalveert naar 4.835 hokdierbedrijven.<br><br> Maar als je naar de grafiek kijkt valt er iets op. Hokdierbedrijven met een omvangsklasse van 3.000 tot 500.000 euro (kleine bedrijven) dalen. Terwijl hokdierbedrijven met een omvangsklasse van 1.000.000 tot meer dan 3.000.000 (grote bedrijven) juist toenemen. </p>
+            <a href='end.html'><button class='button_third'>Dus...</button></a>
+        </div>
+    </main>
+</body>
+<script src='graph.js'></script>
+</html>

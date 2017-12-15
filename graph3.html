@@ -1,0 +1,32 @@
+<!-- Gebaseerd op Mike Bostock's Multi-Series Line Chart November 5, 2017 https://bl.ocks.org/mbostock/3884955. Aantal aanpassingen zijn gedaan door mij, deze zullen aangegeven worden met een comment, daarnaast zal het ook aangegeven worden in de readme.md -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@duy-linh</title>
+    <link rel='stylesheet' href="styles.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class='left'>
+         <div class='select_graph'>
+          <a href='graph.html'><button class='button_second'>Hokdierbedrijven</button></a>
+          <a href='graph2.html'><button class='button_second'>Hokdieren</button></a>
+             <a href='graph3.html'><div class='active'><button class='button_second'>Cultuurgrond</button></div></a>
+          </div>
+           <h2>Aantal cultuurgrond naar economische omvang</h2>
+           <p class='info'>Cultuurgrond is grond die, blijvend dan wel tijdelijk, deel uitmaakt van het bedrijf, en bestemd is voor het voortbrengen van in dit geval veehouderij. <br><br>'SO' staat voor Standaard Opbrengst. Een gestandaardiseerde maat voor de economische omvang van agrarische bedrijven, gebaseerd op de opbrengst die gemiddeld op jaarbasis per gewas of diercategorie wordt behaald.</p>
+            <svg class='grafiek' width="700" height="450"></svg>
+            <p class='bron'>© Centraal Bureau voor de Statistiek, Den Haag/Heerlen 11-12-2017</p>
+        </div>
+        <div class='right'>
+            <h1>Groeit of daalt het aantal cultuurgrond?</h1>
+            <p class='uitleg'>Het totaal aantal cultuurgrond is de afgelopen jaren gedaalt. In 2000 was er in totaal 89.843 ha cultuurgrond, in 2016 is het totaal gedaalt naar 58.540 ha cultuurgrond.<br><br> Zoals je ziet komt de data van cultuurgrond overeen met de data van hokdierbedrijven. De cultuurgrond van bedrijven met een omvangsklasse van 3.000 tot 500.000 euro (kleine bedrijven) daalt. Terwijl de cultuurgrond van bedrijven met een omvangsklasse van 1.000.000 tot meer dan 3.000.000 (grote bedrijven) juist toenemen. </p>
+            <a href='end.html'><button class='button_third'>Dus...</button></a>
+        </div>
+    </main>
+</body>
+<script src='graph3.js'></script>
+</html>
